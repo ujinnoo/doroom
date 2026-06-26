@@ -1,55 +1,75 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Doroom</title>
+
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
 
-    body {
-      background: #fff;
-      font-family: Arial, sans-serif;
+    body{
+      background:#fff;
+      font-family:Arial, sans-serif;
     }
 
-    .gallery {
-      width: 100%;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 20px 0;
+    .gallery{
+      width:100%;
+      max-width:1000px;
+      margin:0 auto;
+      padding:20px 0;
     }
 
-    .gallery img {
-      display: block;
-      width: 100%;
-      height: auto;
-      margin: 0;
+    .gallery img,
+    .gallery video{
+      display:block;
+      width:100%;
+      height:auto;
+      margin:0;
+    }
+
+    .gallery video{
+      object-fit:cover;
     }
   </style>
 </head>
+
 <body>
-  <div class="gallery">
-    <img src="./img/01.png" alt="">
-    <img src="./img/02.png" alt="">
-    <img src="./img/03.gif" alt="">
-    <img src="./img/04.gif" alt="">
-    <img src="./img/05.png" alt="">
-    <img src="./img/06.gif" alt="">
-    <img src="./img/07.gif" alt="">
-    <img src="./img/08.png" alt="">
-    <img src="./img/09.gif" alt="">
-    <img src="./img/10.gif" alt="">
-    <img src="./img/11.png" alt="">
-    <img src="./img/12.png" alt="">
-    <img src="./img/13.gif" alt="">
-    <img src="./img/14.gif" alt="">
-    <img src="./img/15.gif" alt="">
-    <img src="./img/16.png" alt="">
-    <img src="./img/17.png" alt="">
-  </div>
+
+<div class="gallery">
+
+  <img src="./img/01.png" alt="">
+  <img src="./img/02.png" alt="">
+  <img src="./img/03.gif" alt="">
+  <img src="./img/04.gif" alt="">
+  <img src="./img/05.png" alt="">
+  <img src="./img/06.gif" alt="">
+
+  <video
+      autoplay
+      loop
+      muted
+      playsinline
+      preload="auto">
+      <source src="./img/07.mp4" type="video/mp4">
+  </video>
+
+  <img src="./img/08.png" alt="">
+  <img src="./img/09.gif" alt="">
+  <img src="./img/10.gif" alt="">
+  <img src="./img/11.png" alt="">
+  <img src="./img/12.png" alt="">
+  <img src="./img/13.gif" alt="">
+  <img src="./img/14.gif" alt="">
+  <img src="./img/15.gif" alt="">
+  <img src="./img/16.png" alt="">
+  <img src="./img/17.png" alt="">
+
+</div>
+
 </body>
 </html>
